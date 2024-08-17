@@ -51,7 +51,7 @@ const CameraComponent: React.FC<CameraComponentProps> = ({ onCapture }) => {
 
   return (
     <div>
-      <video ref={videoRef} style={{ width: '100%' }} />
+      <video ref={videoRef} style={{ width: '100%' }} playsInline />
       <button onClick={handleCapture}>Chụp ảnh</button>
       <canvas ref={canvasRef} style={{ display: 'none' }} />
     </div>
